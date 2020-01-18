@@ -33,7 +33,7 @@
 function [x,y,e] = GradientFit(ROI,RegR,GraR)
 
 % estimate the initial value of [x,y,e] by using centroid based method
-[x0, y0, e0] = centroid(ROI);
+[x0, y0, e0] = Centroid(ROI);
 
 % define the coordinates of the gradient gride, set the center pixel as the original point
 [m,n] = meshgrid(0.5-GraR:GraR-0.5,GraR-0.5:-1:0.5-GraR);
