@@ -38,8 +38,8 @@ Wy = sum(sIy.*abs(Y1'))/sum(sIy);
 sIx(1:floor(Xc-3*Wx)) = 0;
 sIx(floor(Xc+3*Wx)+1:end) = 0;
 
-sIx(1:floor(Yc-3*Wy)) = 0;
-sIx(floor(Yc+3*Wy)+1:end) = 0;
+sIy(1:floor(Yc-3*Wy)) = 0;
+sIy(floor(Yc+3*Wy)+1:end) = 0;
 
 
 Xc = sum(sIx.*X)/sum(sIx);
